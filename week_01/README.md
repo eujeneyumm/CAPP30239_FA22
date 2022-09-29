@@ -1,4 +1,3 @@
 # Eujene Yum
 
-
-![alt text](dataselfie.jpg "Data Selfie")
+![Alt text](data_selfie.heic "Data Selfie")
