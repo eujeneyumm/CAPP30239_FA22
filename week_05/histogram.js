@@ -26,7 +26,7 @@ d3.json('climate-jan.json').then((data) => {
   const binGroups = svg.append("g")
     .attr("class", "bin-group");
 
-  const bins = d3.bin()
+  const bins = d3.bin() // bins our data for us
     .thresholds(10)
     .value(d => d.average)(data);
 
@@ -34,18 +34,23 @@ d3.json('climate-jan.json').then((data) => {
     .data(bins)
     .join("g");
 
-  // g.append("rect")
-  //   .attr("x", d => x(d.x0) + (padding / 2))
-  //   .attr("y", d => y(d.length))
-  //   .attr("width", d => x(d.x1) - x(d.x0) - padding)
-  //   .attr("height", d => height - margin.bottom - y(d.length))
-  //   .attr("fill", "steelblue");
+  g.append("rect")
+    .attr("x", d => x(d.x0) + (padding / 2))
+    .attr("width", d => x(d.x1) - x(d.x0) - padding)
+    .attr("y", height - margin.bottom)
+    .attr("height",0)
+    .attr("fill", "steelblue")
+    .transition()
+    .duration(750)
+    .attr("y", d => y(d.length))
+    .attr("height", d => height - margin.bottom - y(d.length))
+    ;
 
-  // g.append("text")
-  //   .text(d => d.length)
-  //   .attr("x", d => x(d.x0) + (x(d.x1) - x(d.x0)) / 2)
-  //   .attr("y", d => y(d.length) - 5)
-  //   .attr("text-anchor", "middle")
-  //   .attr("fill", "#333");
+  g.append("text")
+    .text(d => d.length)
+    .attr("x", d => x(d.x0) + (x(d.x1) - x(d.x0)) / 2)
+    .attr("y", d => y(d.length) - 5)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#333");
 
 });

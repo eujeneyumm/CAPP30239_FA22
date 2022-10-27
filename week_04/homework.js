@@ -58,8 +58,7 @@ d3.csv('long-term-interest-canada.csv').then(data => {
       .attr("dx", "-0.5em")
       .attr("y", 10)
       .attr("transform", "rotate(-90)")
-      .text("Interest rate");
-
+      .text("Interest rate");    
 
     /* create line */
     let line = d3.line()
