@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 6 - Washington Post Data Viz</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Week 6 - Washington Post Data Viz</h1>
+    <h4><em> Authors: Eujene Yum and Carolyn Liu</em></h4>
+    <p><strong>Total Number of Death by Month</strong></p>
+    <div id="hw1_chart"></div>
+    <p><strong> Number of Death by Race </strong></p>
+    <div id="hw2_chart"></div>
+    <p><strong> Number of Death across Gender by Month</strong></p>
+    <div id="hw3_chart"></div>
+    <div id = "commendtary">
+      <h3>Commentary</h3>
+      We used three different charts for this assignment. The first line chart aggregates total deaths over each month in the year 2015. We can see that there is potential seasonality in the number of shootings by observing the two peaks in March and July and the dip in June. However, we would need more years of data to verify this trend. The pie chart describes the number of deaths grouped by race. We are able to see that the highest number of people that were killed by the police are white, black, and hispanic respectively. The "other" bucket consists of Asian, Native, and Other races. We consolidated data this way in order to draw focus on the top three races. It is important to remember the racial composition of the US as a whole when looking at this graph. Lastly, we have a stacked bar chart of the ratio of male and female that were killed by the police. Throughout the entire year of 2015, one can easily observe that the overwhelming number of people killed were male.  
+      
+      To gain a more holistic understanding of police shootings in the US, it would be helpful to have additional information on the police officer (including their tenure, race, age, political leaning, etc.) as well as more information on those killed as well (including history with law enforcement, context behind initial contact, etc.)
+    </div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="homework1.js"></script>
+  <script src="homework2.js"></script>
+  <script src="homework3.js"></script> 
+</html>
