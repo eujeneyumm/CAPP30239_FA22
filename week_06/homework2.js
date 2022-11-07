@@ -32,7 +32,7 @@ d3.csv('viz_2.csv').then(data => {
       .attr("d", arc);
   
     svg.append("g")
-      .attr("font-size", 10)
+      .attr("font-size", 15)
       .attr("text-anchor", "middle")
       .selectAll("text")
       .data(arcs)
