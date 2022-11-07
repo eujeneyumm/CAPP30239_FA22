@@ -87,7 +87,8 @@ d3.json('climate.json').then((data) => {
                 .remove();
             }
         );
-
+        
+        // user foreignObject for adding HTML!
         svg.selectAll("foreignObject").remove();
 
         let temp = d3.mean(data[m], d => d.average).toFixed(1);
@@ -100,15 +101,21 @@ d3.json('climate.json').then((data) => {
           .attr("y", 100)
           .attr("width", 120)
           .attr("height", 100)
+          // lets us know we're using html in or foreign object 
           .append('xhtml:div')
           .append("p")
           .html(str);
     }
 
+    // update chart builds the chart
     updateChart("january");
 
+    // select the drop down
+    // key word: on; on the change of the drop down 
+    // there are options like mouse move, hover, pointer event, etc.
     d3.selectAll("select")
         .on("change", function (event) {
+            // event.target.value is how you get "jan", "feb", etc.
             const m = event.target.value;
             updateChart(m); 
         });

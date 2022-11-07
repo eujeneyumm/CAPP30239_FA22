@@ -4,6 +4,7 @@ d3.json('budget-all.json').then((data) => {
   }
 });
 
+// destructuring; i pulled apart d into year and values 
 function createRing({ year, values }) {
   const height = 250,
     width = 300,

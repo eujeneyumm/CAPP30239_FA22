@@ -28,9 +28,9 @@
       .attr("viewBox", [0, 0, width, height]);
     
     d3.csv("fruit.csv").then( data => {
-    
+      // scaleband is for bar chart
       let x = d3.scaleBand(data.map(d => (d.group)),[margin.left, width - margin.right])
-        .padding([0.2]);
+        .padding([0.2]); // padding gives space between bars
 
       let y = d3.scaleLinear([0,45],[height - margin.bottom, margin.top]);
 
@@ -43,8 +43,10 @@
         .call(d3.axisLeft(y).tickSize(-width + margin.left + margin.right))
       
       //protein,carbs,fiber
+      // get data, remove first column called "group"
       const subgroups = data.columns.slice(1);
 
+      // good way to set colors for subgroups
       const color = d3.scaleOrdinal(subgroups,['#e41a1c','#377eb8','#4daf4a']);
     
       const stackedData = d3.stack()

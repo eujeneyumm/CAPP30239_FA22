@@ -1,10 +1,13 @@
 d3.json('budget-2022.json').then((data) => {
   const height = 400,
     width = 600,
-    innerRadius = 125,
+    // inner radius of 0 creates pie chart
+    innerRadius = 100,
     outerRadius = 175,
     labelRadius = 200;
 
+  // takes our data and buckets it 
+  // d3.arc uses inner and outer radius
   const arcs = d3.pie().value(d => d.amount)(data);
   const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
   const arcLabel = d3.arc().innerRadius(labelRadius).outerRadius(labelRadius);
@@ -17,6 +20,7 @@ d3.json('budget-2022.json').then((data) => {
     .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
 
   svg.append("g")
+  // next 3 lines makes the white separators between arcs
     .attr("stroke", "white")
     .attr("stroke-width", 2)
     .attr("stroke-linejoin", "round")
@@ -26,28 +30,28 @@ d3.json('budget-2022.json').then((data) => {
     .attr("fill", (d, i) => d3.schemeCategory10[i])
     .attr("d", arc);
 
-  // svg.append("g")
-  //   .attr("font-size", 10)
-  //   .attr("text-anchor", "middle")
-  //   .selectAll("text")
-  //   .data(arcs)
-  //   .join("text")
-  //   .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
-  //   .selectAll("tspan")
-  //   .data(d => {
-  //     return [d.data.category, d.data.amount];
-  //   })
-  //   .join("tspan")
-  //   .attr("x", 0)
-  //   .attr("y", (d, i) => `${i * 1.1}em`)
-  //   .attr("font-weight", (d, i) => i ? null : "bold")
-  //   .text(d => d);
+  svg.append("g")
+    .attr("font-size", 10)
+    .attr("text-anchor", "middle")
+    .selectAll("text")
+    .data(arcs)
+    .join("text")
+    .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
+    .selectAll("tspan")
+    .data(d => {
+      return [d.data.category, d.data.amount];
+    })
+    .join("tspan")
+    .attr("x", 0)
+    .attr("y", (d, i) => `${i * 1.1}em`)
+    .attr("font-weight", (d, i) => i ? null : "bold")
+    .text(d => d);
 
-  // svg.append("text")
-  //   .attr("font-size", 30)
-  //   .attr("font-weight", "bold")
-  //   .attr("text-anchor", "middle")
-  //   .attr("alignment-baseline", "middle")
-  //   .text("2022")
-  //   .style("font-size", 20);
+  svg.append("text")
+    .attr("font-size", 30)
+    .attr("font-weight", "bold")
+    .attr("text-anchor", "middle")
+    .attr("alignment-baseline", "middle")
+    .text("2022")
+    .style("font-size", 20);
 });
