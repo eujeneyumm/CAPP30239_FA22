@@ -1,0 +1,93 @@
+* {
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  #chart {
+    width: 100%;
+    text-align: center;
+  }
+
+  svg {
+    max-height: 500px;
+    padding: 20px;
+    border: 1px solid black;
+  }
+	#c1r1 {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#c1r1 > svg {
+		margin: 10px;
+    width: 40%;
+	}
+
+  #breadcrumbs {
+    cursor: pointer;
+    margin-bottom: 8px;
+    color: #369;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .x-axis > .tick > text {
+    font-size: 16px;
+  }
+  .svg-tooltip {
+    background: rgba(69, 77, 93, .9);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: none;
+    max-width: 320px;
+    padding: 1rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: pre;
+    z-index: 300;
+    visibility: hidden;
+  }
+
+  .domain {
+    display: none;
+  }
+  
+  line {
+    stroke: #ddd;
+  }
+
+  svg text {
+    font-size:15px;
+    alignment-baseline: middle;
+    font-weight: bold;
+  }
+  
+  .ring svg text {
+    font-size: 12px;
+  }
+/*   
+  .x-axis text {
+    transform: translateY(-15px);
+  }
+  
+  .y-axis text {
+    transform: translateX(10px);
+  } */
+
+  foreignObject p {
+    font-size: 10px;
+  }
+
+ 

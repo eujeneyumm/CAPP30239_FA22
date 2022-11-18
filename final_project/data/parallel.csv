@@ -1,0 +1,21 @@
+,target,value,source,perc
+0,Was told they did not have the correct identification,28,rarely or never vote,3.67
+1,Could not find the polling place,70,rarely or never vote,9.17
+2,Missed the voter registration deadline,125,rarely or never vote,16.38
+3,Was unable to physically access the polling place,48,rarely or never vote,6.29
+4,Could not obtain necessary assistance to fill out a ballot,1,rarely or never vote,0.13
+5,Had to cast a provisional ballot,13,rarely or never vote,1.7
+6,Could not get off work to vote when polls were open,154,rarely or never vote,20.18
+7,Waited in line to vote for more than an hour,210,rarely or never vote,27.52
+8,Was told name was not on the list even though they were registered,56,rarely or never vote,7.34
+9,Did not receive absentee or mail-in ballot in time,58,rarely or never vote,7.6
+0,Was told they did not have the correct identification,62,sometimes vote,4.32
+1,Could not find the polling place,108,sometimes vote,7.52
+2,Missed the voter registration deadline,107,sometimes vote,7.45
+3,Was unable to physically access the polling place,79,sometimes vote,5.5
+4,Could not obtain necessary assistance to fill out a ballot,14,sometimes vote,0.97
+5,Had to cast a provisional ballot,72,sometimes vote,5.01
+6,Could not get off work to vote when polls were open,233,sometimes vote,16.23
+7,Waited in line to vote for more than an hour,518,sometimes vote,36.07
+8,Was told name was not on the list even though they were registered,114,sometimes vote,7.94
+9,Did not receive absentee or mail-in ballot in time,129,sometimes vote,8.98

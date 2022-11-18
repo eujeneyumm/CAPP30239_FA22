@@ -1,0 +1,171 @@
+{
+    "name": "Registration Status",
+    "children": [
+      {
+        "name": "Yes",
+        "children": [
+          {
+            "name": "Republican",
+            "children": [
+              {
+                "name": "Always",
+                "value": 562,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              },
+              {
+                "name": "Sometimes",
+                "value": 724,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              },
+              {
+                "name": "Rarely",
+                "value": 228,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              }
+
+            ],
+            "color": "#ef8a62",
+            "opacity": 0.5
+          },
+          {
+            "name": "Democratic",
+            "children": [
+              {
+                "name": "Always",
+                "value": 688,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              },
+              {
+                "name": "Sometimes",
+                "value": 923,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              },
+              {
+                "name": "Rarely",
+                "value": 312,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              }
+            ],
+            "color": "#67a9cf",
+            "opacity": 0.5
+          },
+          {
+            "name": "Independent",
+            "children": [
+              {
+                "name": "Always",
+                "value": 312,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              },
+              {
+                "name": "Sometimes",
+                "value": 628,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              },
+              {
+                "name": "Rarely",
+                "value": 268,
+                "color": "#1f77b4",
+                "opacity": 0.25
+              }
+            ],
+            "color": "#d8b365",
+            "opacity": 0.5
+          }
+        ],
+        "color": "#1f77b4",
+        "opacity": 0.75
+      },
+      {
+        "name": "No",
+        "children": [
+          {
+            "name": "Republican",
+            "children": [
+              {
+                "name": "Always ",
+                "value": 2,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              },
+              {
+                "name": "Sometimes",
+                "value": 3,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              },
+              {
+                "name": "Rarely",
+                "value": 68,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              }
+            ],
+            "color": "#ef8a62",
+            "opacity": 0.5
+          },
+          {
+            "name": "Democratic",
+            "children": [
+              {
+                "name": "Always",
+                "value": 1,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              },
+              {
+                "name": "Sometimes",
+                "value": 4,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              },
+              {
+                "name": "Rarely",
+                "value": 73,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              }
+            ],
+            "color": "#67a9cf",
+            "opacity": 0.5
+          },
+          {
+            "name": "Independent",
+            "children": [
+              {
+                "name": "Always",
+                "value": 3,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              },
+              {
+                "name": "Sometimes",
+                "value": 1,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              },
+              {
+                "name": "Rarely",
+                "value": 95,
+                "color": "#ff7f0e",
+                "opacity": 0.25
+              }
+            ],
+            "color": "#d8b365",
+            "opacity": 0.5
+          }
+        ],
+        "color": "#ff7f0e",
+        "opacity": 0.75
+      }],
+        "color": "#e377c2",
+        "opacity": 0.75
+      }

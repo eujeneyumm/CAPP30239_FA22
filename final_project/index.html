@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non Voters</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600" rel="stylesheet"> <!-- WHY DO WE NEED THIS?  -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Why don't Americans vote? </h1>
+    <h4><em> by Eujene Yum</em></h4>
+
+    <p><strong>Demographic Breakdown</strong></p>
+    <div id="c1r1"></div>
+
+
+    <p><strong>Showing political leaning</strong></p>
+    <p>Viewing level: <span id="breadcrumbs"></span></p>
+    <div id="treemap"></div>
+
+    <p><strong>Parallel Set Graph. Thinking of filtering this by demographic if possible! </strong></p>
+    <h2>barriers to voting</h2>
+    <div id="parallel"></div>
+
+    <div id = "commentary">  
+    <p>add commentary here!</p>
+    </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="bars.js"></script>
+  <script src="treemap.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="parallel.js"></script>
+<!--   <script src="chart2.js"></script>
+  <script src="chart3.js"></script>  -->
+</html>
