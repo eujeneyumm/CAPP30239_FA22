@@ -10,7 +10,7 @@ d3.select("body")
       .html(str);
   });
 
-d3.csv("data/parallel.csv").then((data) => {
+d3.csv("data/parallel2.csv").then((data) => {
     const width = 1000,
     height = 600,
     margin = { top: 25, right: 0, bottom: 20, left: 0 },
@@ -45,12 +45,11 @@ d3.csv("data/parallel.csv").then((data) => {
     ]);
 
   let color = d3.scaleOrdinal()
-    .range([d3.schemeTableau10[4], d3.schemeTableau10[6]])
+    .range([d3.schemeTableau10[4], d3.schemeTableau10[6], d3.schemeTableau10[5]])
     .domain(vb);
 
   const { nodes, links } = sankey(graph); // modifies and returns graph; this is destructuring. 
 // using nodes data
-  console.log("!!",links)
   svg.append("g")
     .selectAll("rect")
     .data(nodes)

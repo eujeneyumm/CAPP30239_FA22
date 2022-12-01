@@ -1,12 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
+    /* font-family: 'Work Sans',Arial, Helvetica, sans-serif; */
+    font-family: 'Tinos', serif;
+  }
+  .title{
+    text-align: center;
     font-family: 'Work Sans',Arial, Helvetica, sans-serif;
   }
-
+  .minititle{
+    text-align: center;
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+    color:rgba(4, 20, 54, 0.9);
+    margin-top: 1.5em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+  .flex-container{
+    display: flex;
+  }
+  .divider {
+    height: 2px;
+    margin: 10px 30% 20px;
+    text-align: left;
+  }
+  .gradient {
+    background: linear-gradient(135deg, #de1051 0%, #0e2cef 100%);
+  }
+  .one {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .two {
+      width: 800px;
+      margin: 0 auto;
+  }
   p {
     font-size: 1em;
   }
 
   .container {
+    /* font-family: 'Tinos', serif; */
     width: 1040px;
     margin: 0 auto;
   }
@@ -19,16 +57,28 @@
   svg {
     max-height: 500px;
     padding: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
-	#c1r1 {
+  
+	#bars {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
-	#c1r1 > svg {
+	#bars > svg {
+		margin: 10px;
+    width: 40%;
+	}
+  #bars2 {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#bars2 > svg {
 		margin: 10px;
     width: 40%;
 	}
@@ -69,7 +119,15 @@
   }
 
   svg text {
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
     font-size:15px;
+    alignment-baseline: middle;
+    font-weight: bold;
+  }
+
+  svg titletext {
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+    font-size:20px;
     alignment-baseline: middle;
     font-weight: bold;
   }
