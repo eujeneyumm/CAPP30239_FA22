@@ -1,7 +1,6 @@
 // Treemap
-
 let height = 600,
-  width = 900;
+  width = 800;
 
 const svg = d3.select("#treemap")
   .append("svg")
@@ -25,6 +24,7 @@ d3.json('treemap-data.json').then(data => {
     function render(group, node) {
       d3.select('#breadcrumbs')
         .text(node.ancestors().reverse().map(d => d.data.name).join(" > "))
+        .attr("class", "title")
         .on('click', () => {
           if (node.parent) {
             zoomOut(node);

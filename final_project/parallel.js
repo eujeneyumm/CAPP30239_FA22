@@ -1,16 +1,14 @@
 // Parallel Set
-
-
-
 // if i click anywhere on the body, it resets my html
 d3.select("body")
   .on("click", function (e) {
     let str = `The greatest barrier to voting is time`;
     d3.select("h2")
-      .html(str);
+      .html(str)
+      .attr("class", "title");
   });
 
-d3.csv("data/parallel2.csv").then((data) => {
+d3.csv("data/parallel.csv").then((data) => {
     const width = 1000,
     height = 600,
     margin = { top: 25, right: 0, bottom: 20, left: 0 },
@@ -24,7 +22,8 @@ d3.csv("data/parallel2.csv").then((data) => {
     .attr("viewBox", [0, 0, width, height]);
 
   for (let d of data) {
-    d.value = +d.value;
+    d.value = +d.perc;
+    // d.perc = +d.perc;
   }
 
   let vb = [...new Set(data.map(d => d.source))]; //spread syntax
@@ -43,13 +42,14 @@ d3.csv("data/parallel2.csv").then((data) => {
       [margin.left, margin.top],
       [width - margin.right, height - margin.bottom]
     ]);
-
+    
   let color = d3.scaleOrdinal()
-    .range([d3.schemeTableau10[4], d3.schemeTableau10[6], d3.schemeTableau10[5]])
+    .range(["#ece7f2","#a6bddb","#2b8cbe"])
     .domain(vb);
 
   const { nodes, links } = sankey(graph); // modifies and returns graph; this is destructuring. 
 // using nodes data
+  console.log(links, nodes, graph)
   svg.append("g")
     .selectAll("rect")
     .data(nodes)
@@ -80,7 +80,8 @@ d3.csv("data/parallel2.csv").then((data) => {
         .attr("opacity", 0.75);
     })
     .on("click", function (e, d, data) {
-      let str = `${d.source.value.toLocaleString()} of those who ${d.source.name} ${d.target.name}`;
+      console.log(e, d, data)
+      let str = `${d.value.toLocaleString()}% of those who ${d.source.name} ${(d.target.name).toLowerCase()}`;
       d3.select("h2") // find h2 on the page and add this html to it!
         .html(str);
       e.stopPropagation();

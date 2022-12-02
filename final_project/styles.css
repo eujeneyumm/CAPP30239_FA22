@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
+  p {
     /* font-family: 'Work Sans',Arial, Helvetica, sans-serif; */
     font-family: 'Tinos', serif;
-  }
+    }
+
   .title{
     text-align: center;
     font-family: 'Work Sans',Arial, Helvetica, sans-serif;
   }
+
   .minititle{
     text-align: center;
     font-family: 'Work Sans',Arial, Helvetica, sans-serif;
@@ -20,6 +22,7 @@
     font-size: 1.5em;
     letter-spacing: 2px;
   }
+  
   .flex-container{
     display: flex;
   }
@@ -67,6 +70,13 @@
 		justify-content: center;
 	}
 
+  #treemap {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 	#bars > svg {
 		margin: 10px;
     width: 40%;
@@ -78,7 +88,21 @@
 		justify-content: center;
 	}
 
-	#bars2 > svg {
+
+  #bars2 > div {
+		margin: 10px;
+    width: 25%; /*telling me what % of screen the svg takes up*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: space-between;
+
+	}
+
+  #treemap > svg {
 		margin: 10px;
     width: 40%;
 	}
@@ -89,6 +113,9 @@
     color: #369;
     text-decoration: underline;
     font-weight: 500;
+    text-align: center;
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+    }
   }
   .x-axis > .tick > text {
     font-size: 16px;
@@ -98,6 +125,7 @@
     border-radius: 5px;
     color: #fff;
     display: block;
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 16px;
     text-transform: none;
@@ -125,9 +153,16 @@
     font-weight: bold;
   }
 
-  svg titletext {
+  .titletext {
     font-family: 'Work Sans',Arial, Helvetica, sans-serif;
     font-size:20px;
+    alignment-baseline: middle;
+    font-weight: bold;
+  }
+
+  .longtitletext {
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+    font-size:10px;
     alignment-baseline: middle;
     font-weight: bold;
   }

@@ -21,76 +21,74 @@
     <p>Voting plays a pivotal role in upholding democracy in the United States, but 35 - 60% of eligible voters do not vote in a given election.  Especially with recent events, many people are understandably disillusioned and discouraged. It is important to extract the causes underlying this behavior in order to combat dwindling interest in civic duties and boost voter turnout. In this article, I will investigate the current state of voting patterns and the physical, situational, and mental barriers that citizens may be facing that prevents them from going to the polls. The data is in the form of 5,836 surveys from FiveThirtyEight (polling done by Ipsos) conducted in September 2020.</p>
   </div> 
 
-    <!-- going into detail of graph 1 -->
+  <!-- going into detail of graph 1 -->
   <div class="container">
-    <!-- <div class = "flex-container">
-      <div class = "one"> -->
     <h3 class="minititle" style="font-family: 'Work Sans',Arial, Helvetica, sans-serif">Diving into Demographics...</h3>
     <p class="divider gradient"></p>
-    <p>Looking at the breakdown of demographic information and voting behavior, we can see that nonvoters were more likely to have lower incomes, be young, and have lower levels of education. These are all result that align with what we know about people that are less likely to engage with the political system. However, one can observe that those who sometimes vote and always vote are actaully not all that different across demographic breakdowns.</p> 
-      <!-- <div class = "two" id="bars"> -->
-    <h3 style ='text-align: center;'><strong>The always-voters and sometimes-voters are not all that different.</strong></h3>
-    <p style ='text-align: center;'}>demographic information of survey respondents by voting history</p>
+    <p>Looking at the breakdown of demographic information and voting behavior, we can see that nonvoters were more likely to have lower incomes, be young, and have lower levels of education. These are all results that align with what we know about people that are less likely to engage with the political system. Unlike never-voters, those who sometimes vote and always vote are in fact not all that different in terms of demographic breakdown. There is a generally similar distribution across race, gender, income level, and education level for those who sometimes vote and those who always vote. We can infer that these two groups of people are in fact, quite similar. We now take a deeper dive into what factors might be preventing people from voting. </p> 
+    <h3 class ="title"><strong>The always-voters and sometimes-voters are not all that different.</strong></h3>
+    <p class = "title"}>demographic information of survey respondents by voting history</p>
     <div id="bars"></div>
     <p style ='text-align: center;'><small>data for the graph above is from FiveThirtyEight's
     <a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">survey.</a></small></p>
   </div>
     
-    <!-- going into detail of graph 2 -->
+  <!-- going into detail of graph 2 -->
   <div class="container">
     <h3 class="minititle" style="font-family: 'Work Sans',Arial, Helvetica, sans-serif">Americans and Disillusionment</h3>
     <p class="divider gradient"></p>
-    <p></p>
+    <p>The recent history of identity politics and the partisan nature of decisions understandably cause citizens to feel jaded by how the government works (or doesn’t), pushing them to feel disengaged. Out of those who sometimes or rarely vote, a significant portion (40% and higher) stated that they decided not to vote because they disliked the candidates, believed nothing would change for them as a result of the election, or thought none of the candidates talked about that issues that were important to them. These responses once again reinforce the reality that many Americans feel tired of progress or change being promised without tangible impact on their lives. </p>
+    <p>Most of those who rarely or never vote believed the system was too broken to be fixed by voting, and around 80% of those who rarely or never vote wasn’t sure if they were able to vote. This result corroborates the idea that having infrastructure that allows easy access to digestible information about voting is vital in increasing people’s engagement with the democratic system.</p>
     <div id="bars2"></div>
     <p style ='text-align: center;'><small>data for the graph above is from FiveThirtyEight's
       <a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">survey.</a></small></p>
   </div>
-
+  <!-- going into detail of graph 3 - parallel graph -->
   <div class="container">
     <h3 class="minititle" style="font-family: 'Work Sans',Arial, Helvetica, sans-serif">Barriers to Voting</h3>
     <p class="divider gradient"></p>
-    <p> Of the three groups of voters we identified, those voters who only vote some of the time were actually the likeliest to report having stood in line for more than an hour; they were also likelier than those who vote more regularly to say they couldn’t get off work to vote.</p>
-    
-    <h2>barriers to voting</h2>
+    <p>On top of being disillusioned, many citizens face physical and practical barriers to voting. Survey respondents were asked what issues they faced related to voting such as missing the voter registration deadline, not being able to get off work to vote when polls were open, and waiting in line to vote for more than an hour.</p>
+    <p>The responses to this question gives us a glimpse into the difficulties people face when attempting to vote and give some guidelines on what could be improved to ease the pain of voting for many. As seen in the visualization below, those who sometimes vote were the likeliest to report having stood in line for more than an hour, and the second greatest barrier was the fact that they could not get off work when the polls were open. In order to move the needle in increasing the share of citizens who vote, it is evident that action needs to be taken to address this paint point that people experience when it comes to voting. If more resources could be allocated so that polls are able to be open for longer so that people can come by quickly before or after work or more polling locations could be open so that people don’t have to wait an hour, the voting behavior of a significant portion of Americans could be changed.</p>
+  </div>
+  
+  <div class="container">
+    <h2 class="title">The greatest barrier to voting is time</h2>
     <div id="parallel"></div>
     <p style ='text-align: center;'><small>data for the graph above is from FiveThirtyEight's
       <a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">survey.</a></small></p>
   </div>
 
 
-
+  <!-- going into detail of graph 4 - tree map -->
   <div class="container">
     <p class="minititle" style="font-family: 'Work Sans',Arial, Helvetica, sans-serif">survey respondent breakdown</p>
     <p class="divider gradient"></p>
-  <p><strong>Registration status, political leaning, voter behavior</strong></p>
-    <p>Viewing level: <span id="breadcrumbs"></span></p>
+    <p>If you are curious about the breakdown of the 5,836 survey respondents from the polling done by FiveThirtyEight, take a look at the tree map below. This visual breaks down respondents by voting registration status, party affiliation, and voting behavior. There is an even distribution among party affiliation and voting behavior, assuring the reader that the survey attempts to capture as many types of representative Americans as possible in an unbiased way.</p>
+    <p class="title"><strong>Breakdown of survery respondents are balanced across parties</strong></p>
+    <p class="title">Viewing level: <span id="breadcrumbs"></span></p>
     <div id="treemap"></div>
     <p style ='text-align: center;'><small>data for the graph above is from FiveThirtyEight's
       <a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">survey.</a></small></p>
   </div>
 
-   
+  <!-- process -->
   <div class="container">
     <h3 class="minititle" style="font-family: 'Work Sans',Arial, Helvetica, sans-serif">Process</h3>
     <p class="divider gradient"></p>
-    <p>I went through many iterations of topics before deciding to focus on voting behavior in America and the potential roadblocks behind getting to the polls. I used survey data from FiveThirtyEight (polling done by Ipsos) conducted in September 2020. It has 5,836 respondents and their voting behavior (our labels), which can be characterized as always, sporadic, or rarely/never. The survey asks 110 questions targeting the respondent’s political leanings, sentiment toward the efficacy of government, whether they receive benefits from government programs, and the impact that Covid has had on their lives. </p>
-    <p>The dataset itself was not difficult to digest, but a lot of data cleaning had to be done in order to prepare the data correctly for my visuals. First, I had to break up the “voter” column that has three types of values - always, sporadic, or rarely/never – into three separate columns in order to create the bar graph that breaks down voter behavior via demographic (series of bar charts). I followed a similar process for the parallel graph, where I renamed a lot of the columns from names like “Q18_1” to explicit statements like “was told they did not have the correct identification” so that the visualization was more understandable. The tree map in the bottom of the article was a little tricky to tackle at first, but required very few data points. Therefore, I created a json data file to feed into my tree map with information on registration status, party, and voting behavior. </p>
-    <p>Why did you choose the charts you chose?
-      TO BE FILLED
-    </p>
-    <p>One of the biggest limitations when it came to choosing chart types to tell the story I wanted to was the fact that my data surveyed people at one point in time. This meant that any form of time series was impossible and limited my choices when it came to choosing a type of chart to best explain the story. It took some time to break out the mentality that bar graphs were the easiest for the reader to understand the situation, especially since the partial goal of this project was to expose myself to different types of data visualizations. Some other limitations include time and the reality that we did only have nine weeks of exposure to d3js and some of the loftier goals that I had in mind probably required a bit more expertise and time to complete. </p>
+    <p>I went through many iterations of topics before deciding to focus on voting behavior in America and the potential roadblocks behind getting to the polls. I chose this topic since voting is an important part of our democratic process and was genuinely curious what different people found difficult or unattractive about voting. I used survey data from FiveThirtyEight (polling done by Ipsos) conducted in September 2020 because it had a very digestible codebook to go along with the <a href="https://github.com/fivethirtyeight/data/tree/master/non-voters">data</a>.It has 5,836 respondents and their voting behavior (our labels), which can be characterized as always, sporadic, or rarely/never. The survey asks 110 questions targeting the respondent’s political leanings, sentiment toward the efficacy of government, whether they receive benefits from government programs, and the impact that Covid has had on their lives.</p>
+
+    <p>The dataset itself was not difficult to digest, but a lot of data cleaning had to be done in order to prepare the data correctly for my visuals. First, I had to break up the “voter” column that has three types of values - always, sporadic, or rarely/never – into three separate columns in order to create the bar graph that breaks down voter behavior via demographic (series of bar charts). I followed a similar process for the parallel graph, where I renamed a lot of the columns from names like “Q18_1” to explicit statements like “was told they did not have the correct identification” so that the visualization was more understandable. The tree map in the bottom of the article was a little tricky to tackle at first but required very few data points. Therefore, I created a json data file to feed into my tree map with information on registration status, party, and voting behavior.</p>
+
+    <p>The story that the chart assist telling is that there are roadblocks to voting – both psychologically and physically. Those who sometimes vote and always vote are not entirely different in demographic breakdown, but those who sometimes vote are currently disillusioned by the system and face real barriers when trying to get to the polls (i.e. the wait is too long, the polling site hours don’t align with when they are able to get off work). I looked at the data and results before telling the story and was able to avoid big pivots in my story. Some of the ethical consideration had to be made in my bar graphs when choosing colors. I initially chose blue for always-voters, purple for sometimes-voters, and red for never-voters. However, this color scheme felt too strongly associated with party alignments, and I went for lighter hues to show sequential data from colorbrewer.org. I chose bar graphs to show the breakdown of demographic and reasons behind disillusionment, as this felt like the most straightforward way to digest that information. Parallel graphs were used to show the barriers to voting so that the reader can see clearly in one graph what the biggest roadblock to voting was. Lastly, I used a tree map to show the breakdown of survey respondents so that the reader can see the numbers as well as the relative sizes of the categories.</p>
+
+    <p>One of the biggest limitations when it came to choosing chart types was the fact that my data surveyed people at one point in time. This meant that any form of time series was impossible and limited my choices when it came to choosing a type of chart to best explain the story. It took some time to break out the mentality that bar graphs were the easiest for the reader to understand the situation, especially since the partial goal of this project was to expose myself to different types of data visualizations. Some other limitations include time and the reality that we did only have nine weeks of exposure to d3js and some of the loftier goals that I had in mind probably required a bit more expertise and time to complete.</p>
 
   </div>
-    
-
-    </div>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="bars.js"></script>
   <script src="treemap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="parallel.js"></script>
   <script src="bars2.js"></script>
-<!--   <script src="chart2.js"></script>
-  <script src="chart3.js"></script>  -->
 </body>
 </html>

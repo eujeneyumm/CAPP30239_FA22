@@ -17,17 +17,20 @@ Promise.all([
     createChart2(data6, "I'm not sure if I can vote");
     createChart2(data7, "Nobody talks about the issues that are important to me");
     createChart2(data8, "All the candidates are the same to me");
-    createChart2(data9, "I'm not sure if I can vote");
-    // createChart(data3, "#c1r2");
+    createChart2(data9, "I don't believe in voting");
   });
   
   function createChart2(alldata, title) {
-    console.log("how many times")
-    const margin = {top: 10, right: 30, bottom: 20, left: 50},
-      width = 850 - margin.left - margin.right,
+    const chart_container = d3.select("#bars2")
+      .append("div")
+    
+    chart_container.append("span").text(title)
+
+    const margin = {top: 70, right: 30, bottom: 20, left: 50},
+      width = 450 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
       
-    const svg = d3.select("#bars2")
+    const svg = chart_container
       .append("svg")
       .attr("viewBox", [0, 5, width, height])
       .append("g");
@@ -51,24 +54,25 @@ Promise.all([
   
     // Add Y axis
     const y = d3.scaleLinear()
-      .domain([0, d3.max(alldata, d => d.perc_agree)])
+      // .domain([0, d3.max(alldata, d => d.perc_agree)])
+      .domain([0, 90])
       .range([height-margin.bottom, margin.top]);
     
     svg.append("g")
       .attr("transform", `translate(${margin.left}, 0)`) // template literal
       .attr("class", "y-axis")
       .call(d3.axisLeft(y));
-  
-    /* add text element - Title */
-    /* how to make this font bigger?*/
+    // y axis text
     svg.append("text")
-      .text(title)  
-      .attr("transform", "translate(240,0)")
-      .attr("x", 50)
-      .attr("y", 20)
-      // .attr("class", "titletext")
-      .attr("font-size", "24px");
-
+      .attr("class", "y-label")
+      .attr("text-anchor", "end")
+      .attr("x", -margin.top/2)
+      .attr("dx", "-0.5em")
+      .attr("y", 10)
+      .attr("transform", "rotate(-90)")
+      .text("% of respondants ");
+  
+  
 
       /* create bar element */ 
     let bar = svg.selectAll(".bar")
@@ -78,6 +82,7 @@ Promise.all([
         .attr("class","bar");
 
 /* add bar element to svg */
+// how to make bars skinnier and have title show?
     bar.append("rect")
         .attr("fill", function(d){
           if (d.voter == "sometimes"){
@@ -88,5 +93,36 @@ Promise.all([
         .attr("x", d => x(d.voter)) 
         .attr("width", x.bandwidth())
         .attr("y", d => y(d.perc_agree))
-        .attr("height", d => y(0) - y(d.perc_agree));  
+        .attr("height", d => y(0) - y(d.perc_agree)); 
+
+    // tooltip
+    // const tooltip = d3.select("body").append("div") // going into html and selecting body tag and append new div
+    //   .attr("class", "svg-tooltip")
+    //   .style("position", "absolute")
+    //   .style("visibility", "hidden");
+    // d3.selectAll("rect") 
+    //   // when mouseover happens, create this function
+    //   .on("mouseover", function(event, d) {
+    //     tooltip
+    //       .style("visibility", "visible")
+    //       .html(`percentage: ${d.perc_agree}<br />`);
+    //   })
+    //   // when mose moves, event takes place; 
+    //   .on("mousemove", function(event) {
+    //     tooltip
+    //       .style("top", (event.pageY - 10) + "px")
+    //       .style("left", (event.pageX + 10) + "px");
+    //   })
+    //   // when mouse goes off screen: turn off tooltip
+    //   .on("mouseout", function() {
+    //     d3.select(this).attr("fill", function(d){
+    //       if (d.voter == "sometimes"){
+    //         return "#a6bddb";
+    //       }
+    //         return "#ece7f2";
+    //     });
+    //     tooltip.style("visibility", "hidden");
+    //   })   
   }
+
+

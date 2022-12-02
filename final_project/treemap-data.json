@@ -10,20 +10,20 @@
               {
                 "name": "Always",
                 "value": 562,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#2b8cbe",
+                "opacity": 1
               },
               {
                 "name": "Sometimes",
                 "value": 724,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#a6bddb",
+                "opacity": 1
               },
               {
                 "name": "Rarely",
                 "value": 228,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#ece7f2",
+                "opacity": 1
               }
 
             ],
@@ -36,20 +36,20 @@
               {
                 "name": "Always",
                 "value": 688,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#2b8cbe",
+                "opacity": 1
               },
               {
                 "name": "Sometimes",
                 "value": 923,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#a6bddb",
+                "opacity": 1
               },
               {
                 "name": "Rarely",
                 "value": 312,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#ece7f2",
+                "opacity": 1
               }
             ],
             "color": "#67a9cf",
@@ -61,27 +61,27 @@
               {
                 "name": "Always",
                 "value": 312,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#2b8cbe",
+                "opacity": 1
               },
               {
                 "name": "Sometimes",
                 "value": 628,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#a6bddb",
+                "opacity": 1
               },
               {
                 "name": "Rarely",
                 "value": 268,
-                "color": "#1f77b4",
-                "opacity": 0.25
+                "color": "#ece7f2",
+                "opacity": 1
               }
             ],
-            "color": "#d8b365",
+            "color": "#dadaeb",
             "opacity": 0.5
           }
         ],
-        "color": "#1f77b4",
+        "color": "#c7e9c0",
         "opacity": 0.75
       },
       {
@@ -93,20 +93,20 @@
               {
                 "name": "Always ",
                 "value": 2,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#2b8cbe",
+                "opacity": 1
               },
               {
                 "name": "Sometimes",
                 "value": 3,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#a6bddb",
+                "opacity": 1
               },
               {
                 "name": "Rarely",
                 "value": 68,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#ece7f2",
+                "opacity": 1
               }
             ],
             "color": "#ef8a62",
@@ -118,20 +118,20 @@
               {
                 "name": "Always",
                 "value": 1,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#2b8cbe",
+                "opacity": 1
               },
               {
                 "name": "Sometimes",
                 "value": 4,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#a6bddb",
+                "opacity": 1
               },
               {
                 "name": "Rarely",
                 "value": 73,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#ece7f2",
+                "opacity": 1
               }
             ],
             "color": "#67a9cf",
@@ -143,27 +143,27 @@
               {
                 "name": "Always",
                 "value": 3,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#2b8cbe",
+                "opacity": 1
               },
               {
                 "name": "Sometimes",
                 "value": 1,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#a6bddb",
+                "opacity": 1
               },
               {
                 "name": "Rarely",
                 "value": 95,
-                "color": "#ff7f0e",
-                "opacity": 0.25
+                "color": "#ece7f2",
+                "opacity": 1
               }
             ],
-            "color": "#d8b365",
+            "color": "#dadaeb",
             "opacity": 0.5
           }
         ],
-        "color": "#ff7f0e",
+        "color": "#fcbba1",
         "opacity": 0.75
       }],
         "color": "#e377c2",
