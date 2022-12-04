@@ -7,7 +7,7 @@ const svg = d3.select("#treemap")
   .attr("viewBox", [0, 0, width, height]);
 
 
-d3.json('treemap-data.json').then(data => { 
+d3.json('data/treemap-data.json').then(data => { 
     const treemap = data => d3.treemap()
       (d3.hierarchy(data)
         .sum(d => d.value)
