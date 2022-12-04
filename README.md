@@ -21,12 +21,12 @@ This is Eujene Yum's repository for Data Visualization Fall 2022 and will be upd
 * script.js: JS file for D3.js bar chart walkthrough during class
 * covid.csv: covid data for in-class D3.js bar chart walkthrough
 
-## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_04">Week 4: Horizontal Bar Chart, Line Charts </a>
+## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_04">Week 4: Bar, line, area charts </a>
 
-## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_05">Week 5: </a>
-## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_06">Week 6: </a>
-## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_07">Week 7: </a>
-## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_08">Week 8: </a>
-## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_09">Week 9: </a>
+## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_05">Week 5: Histograms, scatterplots</a>
+
+## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_06">Week 6: Stacked charts, pie/ring charts</a>
+## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_07">Week 7: Colors, bubble maps, choropleths</a>
+## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_08">Week 8: Sankey, parallel sets</a>
+## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/week_09">Week 9: Treemaps</a>
 ## <a href="https://github.com/eujeneyumm/CAPP30239_FA22/tree/main/final_project">Final Project</a>
-
