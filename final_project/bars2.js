@@ -94,35 +94,6 @@ Promise.all([
         .attr("width", x.bandwidth())
         .attr("y", d => y(d.perc_agree))
         .attr("height", d => y(0) - y(d.perc_agree)); 
-
-    // tooltip
-    // const tooltip = d3.select("body").append("div") // going into html and selecting body tag and append new div
-    //   .attr("class", "svg-tooltip")
-    //   .style("position", "absolute")
-    //   .style("visibility", "hidden");
-    // d3.selectAll("rect") 
-    //   // when mouseover happens, create this function
-    //   .on("mouseover", function(event, d) {
-    //     tooltip
-    //       .style("visibility", "visible")
-    //       .html(`percentage: ${d.perc_agree}<br />`);
-    //   })
-    //   // when mose moves, event takes place; 
-    //   .on("mousemove", function(event) {
-    //     tooltip
-    //       .style("top", (event.pageY - 10) + "px")
-    //       .style("left", (event.pageX + 10) + "px");
-    //   })
-    //   // when mouse goes off screen: turn off tooltip
-    //   .on("mouseout", function() {
-    //     d3.select(this).attr("fill", function(d){
-    //       if (d.voter == "sometimes"){
-    //         return "#a6bddb";
-    //       }
-    //         return "#ece7f2";
-    //     });
-    //     tooltip.style("visibility", "hidden");
-    //   })   
   }
 
 

@@ -1,4 +1,5 @@
 // Parallel Set
+
 // if i click anywhere on the body, it resets my html
 d3.select("body")
   .on("click", function (e) {
@@ -23,18 +24,13 @@ d3.csv("data/parallel.csv").then((data) => {
 
   for (let d of data) {
     d.value = +d.perc;
-    // d.perc = +d.perc;
   }
 
   let vb = [...new Set(data.map(d => d.source))]; //spread syntax
 
   let graph = nodeLinkData(data, ["source", "target"]);
-  // let graph = nodeLinkData(data, ["source", "target"]);
-
-
 
   let sankey = d3.sankey()
-    // .nodeSort((a, b) => a.name.localeCompare(b.name))
     .nodeWidth(nodeWidth)
     .nodePadding(nodePadding)
     .extent([
@@ -61,7 +57,7 @@ d3.csv("data/parallel.csv").then((data) => {
 
   svg.append("g") // 
     .attr("fill", "none")
-    .selectAll("g") // a grouping element; it groups my data together
+    .selectAll("g") 
     .data(links)
     .join("path")
     .attr("d", d3.sankeyLinkHorizontal())
@@ -79,7 +75,7 @@ d3.csv("data/parallel.csv").then((data) => {
     })
     .on("click", function (e, d, data) {
       let str = `${d.value.toLocaleString()}% of those who ${d.source.name} ${(d.target.name).toLowerCase()}`;
-      d3.select("h2") // find h2 on the page and add this html to it!
+      d3.select("h2") // find h2 on the page and add this html to it
         .html(str);
       e.stopPropagation();
     })
@@ -114,7 +110,7 @@ d3.csv("data/parallel.csv").then((data) => {
     .text(d => d.name);
 });
 
-// This function separates data into links and nodes
+// eparates data into links and nodes
 function nodeLinkData(data, [source, target]) {
   const keys = [source, target];
   const seenNodes = new Set();

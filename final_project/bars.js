@@ -70,7 +70,6 @@ function createChart(alldata, title) {
     .text("% of respondants ");
     
     /* add text element - Title */
-    /* how to make this font bigger?*/
     svg.append("text")
       .text(title)  
       .attr("transform", "translate(180,0)")
@@ -122,14 +121,9 @@ function createChart(alldata, title) {
 
   // Handmade legend
     svg.append("circle").attr("cx",430).attr("cy",15).attr("r", 6).style("fill", "#2b8cbe").style("stroke", "black")
-
     svg.append("circle").attr("cx",430).attr("cy",42).attr("r", 6).style("fill", "#a6bddb").style("stroke", "black")
-
     svg.append("circle").attr("cx",430).attr("cy",70).attr("r", 6).style("fill", "#ece7f2").style("stroke", "black")
-
     svg.append("text").attr("x", 445).attr("y", 15).text("always").style("font-size", "15px").attr("alignment-baseline","middle")
-
     svg.append("text").attr("x", 445).attr("y", 42).text("sporadic").style("font-size", "15px").attr("alignment-baseline","middle")
-
     svg.append("text").attr("x", 445).attr("y", 70).text("never").style("font-size", "15px").attr("alignment-baseline","middle") 
 } 
