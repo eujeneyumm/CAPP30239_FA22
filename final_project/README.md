@@ -4,6 +4,7 @@ Voting plays a pivotal role in upholding democracy in the United States, but 35 
 
 Folder organization:
 * brainstorming
+  * testing
 * data
 * data cleaning 
 * README.md
