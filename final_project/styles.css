@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
   p {
-    /* font-family: 'Work Sans',Arial, Helvetica, sans-serif; */
     font-family: 'Tinos', serif;
     }
 
@@ -47,7 +46,6 @@
   }
 
   .container {
-    /* font-family: 'Tinos', serif; */
     width: 1040px;
     margin: 0 auto;
   }
@@ -60,7 +58,6 @@
   svg {
     max-height: 500px;
     padding: 20px;
-    /* border: 1px solid black; */
   }
   
 	#bars {
@@ -171,14 +168,6 @@
   .ring svg text {
     font-size: 12px;
   }
-/*   
-  .x-axis text {
-    transform: translateY(-15px);
-  }
-  
-  .y-axis text {
-    transform: translateX(10px);
-  } */
 
   foreignObject p {
     font-size: 10px;

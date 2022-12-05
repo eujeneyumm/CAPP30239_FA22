@@ -21,9 +21,8 @@ function createChart(alldata, title) {
     .append("g");
 
   const subgroups = ['always', 'sporadic', 'rarely/never']
-  // console.log(subgroups)
+
   const groups = alldata.map(d => d.dem)
-  console.log(groups)
 
   // Add X axis
   const x = d3.scaleBand()

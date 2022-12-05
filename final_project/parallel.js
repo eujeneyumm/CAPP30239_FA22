@@ -27,7 +27,6 @@ d3.csv("data/parallel.csv").then((data) => {
   }
 
   let vb = [...new Set(data.map(d => d.source))]; //spread syntax
-  // console.log(genders);
 
   let graph = nodeLinkData(data, ["source", "target"]);
   // let graph = nodeLinkData(data, ["source", "target"]);
@@ -49,7 +48,6 @@ d3.csv("data/parallel.csv").then((data) => {
 
   const { nodes, links } = sankey(graph); // modifies and returns graph; this is destructuring. 
 // using nodes data
-  console.log(links, nodes, graph)
   svg.append("g")
     .selectAll("rect")
     .data(nodes)
@@ -80,7 +78,6 @@ d3.csv("data/parallel.csv").then((data) => {
         .attr("opacity", 0.75);
     })
     .on("click", function (e, d, data) {
-      console.log(e, d, data)
       let str = `${d.value.toLocaleString()}% of those who ${d.source.name} ${(d.target.name).toLowerCase()}`;
       d3.select("h2") // find h2 on the page and add this html to it!
         .html(str);
