@@ -4,11 +4,11 @@ Voting plays a pivotal role in upholding democracy in the United States, but 35 
 
 ### Folder organization:
 * brainstorming: folder for initial brainstorming process documents
-* data_cleaning
+* data_cleaning: folder with three files for preparing data
   * no_vote_data_clean.ipynb: jupyter notebook for data manipulation
   * no_voter_data.csv: raw data
   * nonvoters_codebook.pdf: codebook from FiveThirtyEight
-* data cleaning: 16 small .csv files that feeds into the charts
+* data: 16 small .csv files that feeds into the charts
 
 #### Files in the root
   * README.md
